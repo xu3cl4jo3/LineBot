@@ -47,7 +47,7 @@ namespace LineWebHook.Controllers {
                 if (lineEvent.replyToken != "00000000000000000000000000000000") {
                     switch (lineEvent.type) {
                         case "join":
-                            bot.ReplyMessage (replyToken, $"有人把我加入 {lineEvent.source.type} 裡了，大家好啊～");
+                            bot.ReplyMessage (replyToken, $"有人把我加入 {lineEvent.source.type} 了，大家好啊～");
                             actionResult = Ok ();
                             break;
 
